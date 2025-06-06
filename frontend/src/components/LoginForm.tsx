@@ -21,7 +21,7 @@ export default function LoginForm() {
       localStorage.setItem('token', response.data.access);
       
      
-      router.push('/dashboard');
+      router.push('/upload');
     } catch (error) {
       console.error('Login failed:', error);
       alert('Login failed. Please check your credentials.');
