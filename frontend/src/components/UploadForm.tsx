@@ -20,10 +20,10 @@ export default function UploadForm({ onUpload }: { onUpload: (files: File[]) => 
     });
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen flex items-start justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
             <div
                 {...getRootProps()}
-                className={`border-2 border-dashed rounded-xl p-10 text-center cursor-pointer transition-all
+                className={`border-2 border-dashed rounded-xl p-30 text-center cursor-pointer transition-all
         ${isDragActive ? 'border-[#1bd586] bg-[#1bd586]/10' : 'border-[#1bd586]/50'}`}
             >
                 <input {...getInputProps()} />
